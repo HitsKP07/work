@@ -1,0 +1,25 @@
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: linear-gradient(lightblue, lightcoral);
+    }
+
+    .inner-border {
+        height: 300px;
+        width: 300px;
+        background: transparent;
+        border-radius: 50%;
+        border: 5px solid black;
+        margin-top: 163px;
+        margin-left: 169px;
+        background: linear-gradient(lightblue, lightcoral);
+    }
