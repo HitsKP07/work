@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+           height: 480px;
+           width: 100%;
+            background: gray;
+            padding: 20px;
+            position: relative;
+            
+        }
+
+        .ball1 {
+            height: 50px;
+            width: 50px;
+            background: red;
+            border-radius: 50%;
+            top: 20px;
+            position: absolute;
+           animation: ball1 1s linear infinite alternate;
+
+        }
+
+        .ball2 {
+            height: 80px;
+            width: 80px;
+            background: greenyellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: translate(-50px -50px);
+            animation: ball2 1s linear infinite alternate ;
+        }
+
+        .ball3 {
+            height: 100px;
+            width: 100px;
+            background: purple;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: translate(-50px -50px);
+            animation: ball3 2s linear infinite alternate;
+        }
+            
+        
+
+        @keyframes ball1 {
+            0% {
+                top:-500px;
+            }
+
+            25% {
+                top:40%;
+            }
+
+            50% {
+               left: 100%;
+            }
+
+            75% {
+               top: 480px;
+            }
+
+            100% {
+                left: 0px;
+            }
+        }
+        @keyframes ball2 {
+            0% {
+               top: 0; left: 0;
+            }
+
+            25% {
+                top: 80%; left: 20%;
+            }
+
+            50% {
+                top: 30%; left: 50%;
+            }
+
+            75% {
+                top: 80%; left: 80%;
+            }
+
+            100% {
+                top: 30%; left: 100%;
+            }
+        }
+        @keyframes ball3{
+            from {left: 0px;}
+             to {left: 100%;}
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+    </div>
+</body>
+
+</html>

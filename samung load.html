@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .samsung{
+            height: 200px;
+            width: 200px;
+            border: 5px solid;
+            position: relative;
+            padding: 20px;
+
+        }
+        .b1,.b2,.b3,.b4{
+            height: 20%;
+            width: 20%;
+            border: 2px solid red;
+            border-radius: 50%;
+            position: absolute;
+            background: greenyellow;
+            top:3%;
+              left:3%;
+              animation: sam 2s linear infinite alternate;
+            
+        }
+        .b2{top:60%;
+              left:3%;
+              animation: sam2 2s linear infinite alternate;
+           }
+
+          .b3{ top: 3%;
+               left: 60%;
+               animation: sam3 2s linear infinite alternate;
+          }
+          .b4{
+              top: 60%;
+              left: 60%;
+              animation: sam4 2s linear infinite alternate;
+          } 
+
+          @keyframes sam{
+            from{ top:3%;
+              left:3%;}
+            to{ top:20%;
+              left:20%; 
+            rotate: 360deg;}
+          }
+          @keyframes sam2{
+            from{top:60%;
+              left:3%;
+           }
+            to{ top:45%;
+              left:20%; 
+            rotate: 360deg;}
+          }
+    </style>
+</head>
+<body>
+    <div class="samsung">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            background: lightblue;
+            margin: 150px auto;
+            /* border-radius: 20%; */
+       animation: main .7s linear infinite alternate;
+            /* display: flex; */
+             
+        }
+        
+        @keyframes main{
+            0%{border-radius: 40% 0% 0 40%;}
+            
+            100%{border-radius:0 40% 40% 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

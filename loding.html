@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .samsung {
+            height: 50px;
+            width: 50px;
+            /* background-color: blue; */
+            margin: 50px auto;
+            animation: rotate 2s linear infinite  ;
+            
+        }
+          .div1,.div2{
+            height: 50%;
+            display: flex;
+            
+          }
+        .one,
+        .two,
+        .three,
+        .four {
+            
+            width: 50%;
+            background: red;
+            border-radius: 50%;
+            border: 3px solid;
+            
+        }
+        @keyframes rotate {
+            from{transform:rotate(0)}
+            to{transform:rotate(360deg) }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="samsung">
+        <div class="div1">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div class="div2">
+            <div class="three"></div>
+            <div class="four"></div>
+        </div>
+
+          
+    </div>
+</body>
+
+</html>
